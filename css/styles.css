@@ -466,7 +466,7 @@ address {
     margin-left: 80px;
 }
 
-.footer-form-wrap {
+.footer-form {
     display: flex;
     gap: 24px;
 }
@@ -479,8 +479,11 @@ address {
     background-color: transparent;
     font-family: inherit;
     font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #FFFFFF;
-    padding: 8px 0 8px 16px;
+    padding-left: 16px;
 }
 
 .footer-input::placeholder {
@@ -534,6 +537,9 @@ address {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -545,14 +551,19 @@ address {
 .modal {
     width: 408px;
     min-height: 584px;
-    background-color: #fafafa;
+    background: #fcfcfc;
     border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
+    transition: transform 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
     padding: 24px;
     letter-spacing: 0.04em;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close {
@@ -565,20 +576,26 @@ address {
     height: 24px;
     border-radius: 50%;
     background-color: #E7E9FC;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function:
-        cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    transition: background-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
     background-color: #404BBF;
+    border: none;
 }
+
+.icon-backdrop-close {
+    transition: fill 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);}
+
 
 .modal-title {
     text-align: center;
@@ -595,7 +612,7 @@ address {
 .modal-label {
     display: block;
     padding-top: 8px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     font-size: 12px;
     color: rgb(142, 143, 153);
 }
@@ -610,6 +627,7 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 0px 8px 38px;
+    background-color: transparent;
     outline: transparent;
     font-family: inherit;
     transition-property: border-color;
@@ -642,9 +660,14 @@ address {
 .modal-textarea {
     width: 100%;
     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding: 8px 0px 8px 16px;
+    padding: 8px 16px;
     outline: transparent;
     font-family: inherit;
     resize: none;
@@ -668,12 +691,14 @@ address {
     justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
-    
+    margin-bottom: 24px;
 }
 
 .label-checkbox {
     display: flex;
     align-items: center;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .label-checkbox span {
@@ -682,10 +707,14 @@ address {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .label-checkbox span {
@@ -702,6 +731,7 @@ address {
 .modal-button {
     color: #FFF;
     background-color: #4D5AE5;
+    cursor: pointer;
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
