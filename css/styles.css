@@ -613,7 +613,7 @@ address {
 }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-label {
@@ -700,7 +700,7 @@ address {
     justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .label-checkbox {
