@@ -617,7 +617,7 @@ address {
 }
 
 .modal-label {
-    /*display: block;*/
+    display: block;
     padding-top: 8px;
     margin-bottom: 4px;
     font-size: 12px;
@@ -700,7 +700,7 @@ address {
     justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .label-checkbox {
@@ -710,7 +710,8 @@ address {
     letter-spacing: 0.04em;
 }
 
-.label-checkbox span {
+/*.label-checkbox span*/
+.modal-span-checkbox {
     width: 16px;
     height: 16px;
     border-radius: 2px;
