@@ -617,7 +617,7 @@ address {
 }
 
 .modal-label {
-    display: block;
+    /*display: block;*/
     padding-top: 8px;
     margin-bottom: 4px;
     font-size: 12px;
