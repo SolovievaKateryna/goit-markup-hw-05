@@ -612,6 +612,10 @@ address {
     letter-spacing: 0.02em;
 }
 
+.modal-field-first {
+    margin-bottom: 8px;
+}
+
 .modal-field {
     margin-bottom: 16px;
 }
@@ -710,14 +714,13 @@ address {
     letter-spacing: 0.04em;
 }
 
-/*.label-checkbox span*/
 .modal-span-checkbox {
+    display: inline-flex;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
