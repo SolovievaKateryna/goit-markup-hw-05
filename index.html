@@ -409,14 +409,14 @@
                 <div class="footer-column-third">
                     <p class="footer-social-tex">Subscribe</p>
                     <form class="footer-form">
-                        <label class="footer-label visually-hidden">Name
+                        <label for="email-for-subscribe" class="footer-label visually-hidden"></label>
                             <input type="email" 
                             name="subscribe" 
                             class="footer-input" 
-                            <!--* id="input-fore-subscribe" -->
-                            placeholder="E-mail" /></label>
+                            placeholder="E-mail"
+                            id="email-for-subscribe" />
                         <button type="submit" class="footer-form-button">Subscribe 
-                            <svg class="footer-form-icon" width="24" height="20">
+                            <svg class="footer-form-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-icon-send-1"></use>
                         </svg></button>
                     </form>
@@ -425,9 +425,9 @@
             </div>
         </footer>
 
-        <!--* Backdrop-------------- -->
+        <!--* Backdrop -------------- -->
         
-<div class="backdrop is-open">
+<div class="backdrop">
     <div class="modal">
         <button type="button" class="modal-close">
             <svg class="icon-backdrop-close" width="8" height="8">
