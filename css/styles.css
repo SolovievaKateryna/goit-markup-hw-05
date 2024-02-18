@@ -700,7 +700,7 @@ address {
     justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 16px
 }
 
 .label-checkbox {
