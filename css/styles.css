@@ -612,11 +612,11 @@ address {
     letter-spacing: 0.02em;
 }
 
-.modal-field-first {
+.modal-field {
     margin-bottom: 8px;
 }
 
-.modal-field {
+.modal-field-second {
     margin-bottom: 16px;
 }
 
@@ -733,7 +733,7 @@ address {
 .modal-checkbox:checked + .label-checkbox span {
     background-color: #404BBF;
     border: none;
-    fill: #F4F4FD
+    fill: #F4F4FD;
 }
 
 .link-policy {
@@ -759,7 +759,8 @@ address {
     min-width: 169px;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: 
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
